@@ -1,0 +1,40 @@
+if you wanna make a new terminal that is completely separated from your main terminal , you can use this tool. also you can keep it running real-time(same time)
+with you main terminal . and it can keep running your scripts and services 
+
+install :
+
+apt-get install tmux
+
+make a new session (its may closed automaticly) : 
+tmux new -s session_name 
+
+
+if you wanna make a session that work always :
+
+tmux new-session -d -s my_session
+
+
+attach to a session :
+tmux attach-session -t session_name
+
+
+
+to detach from that session :
+
+ctrl+b then press d
+
+OR also you can use this commad in that session`s terminal 
+tmux detach
+
+to sea your sessions :
+tmux ls
+
+to detele a session :
+tmux kill-session -t name_session
+OR 
+attaching to that session and use this shourtcut = ctrl + d
+
+to rename a session :
+tmux rename-session -t current-name new-name
+
+

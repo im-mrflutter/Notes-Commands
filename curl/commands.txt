@@ -1,0 +1,31 @@
+
+to check exist 
+
+curl --version
+
+
+------------
+
+to get a data 
+
+curl -X GET -d "url/endpoint"
+
+if tou wanna se an specefic data you have to pass an Key
+
+curl -X GET -d "url/endpoint/Key"
+
+like :
+
+curl -X GET -d "url/endpoint/Key"
+
+
+------------
+
+
+what defrent between PUT and PATCH ??
+
+the PUT method overwirte All the datas to that thing you pass to API
+
+BUT
+
+the PATCH method cat UPDATE an specefic part of a Data 

@@ -1,0 +1,81 @@
+install redis :
+
+apt-get install redis-tools
+
+after that :
+
+apt install redis-server
+
+
+
+to checking running service :
+
+systemctl start redis-server
+
+to see status service :
+
+systemctl status redis-server
+
+----------
+
+
+if you want to set a password you have to edite this file :
+
+nano /etc/redis/redis.conf
+
+
+you have to find a line that start with this :
+
+requirepass your_strong_password
+
+
+OR
+
+you have to go in redis-cli and run this commands :
+
+CONFIG SET requirepass secret_password
+
+after that  
+
+AUTH secret_password
+
+
+
+
+at the end of any command its will show you - OK
+
+
+
+
+
+
+-------------
+
+back up from redis DB :
+
+1- redis-cli
+
+(if your redis has PassWord , you have to use this command :
+
+redis-cli -a 'password'
+
+attention : you must have to use singel quotation
+)
+
+2- sudo bgsave
+
+3- go to this path :
+
+/var/lib/redis
+
+and get a copy from anything int this directoy
+
+
+
+
+
+
+
+
+connect to redis that has password :
+redis-cli -a 'YourRedisPass'

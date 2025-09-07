@@ -1,0 +1,236 @@
+to see the all duc
+
+adb
+
+-----------
+
+to see those devices are run , ID & status of devices
+
+adb devices
+
+-----------
+
+to access to that phone(emulator)
+it means you connecting to that device that is run right now
+
+adb shell 
+
+-----------
+if you had muliply devices you have to point to the Id(name of phone/emulator) 
+
+adb -s emulator-ID shell
+
+
+-----------
+
+to see the ALL properties from a phone/emulator
+
+
+adb shell getprop
+
+-----------
+
+to see All applications and packages
+
+pm list packages
+
+you have to run this command in the shell of emulator
+
+-----------
+
+to send a file from your system to the device
+
+adb push the_file.example /path 
+
+you have to run this command out of Shell of phone
+
+-----------
+
+to get a file from a phone/emulator
+
+adb pull /path/file_on_phone.example /path/that_we_wanna_save
+
+
+you have to run this command out of Shell of phone
+
+note : if you wanna get a file and save that on that folder you ran cmd
+
+you just need to use a dot ( . ) to last part of command like :
+
+adb pull /path/file_on_phone .
+
+-----------
+
+to get screenshot
+
+adb exec-out screencap -p > /the_path_need_save/picname.png
+
+
+
+if we wanna save a pic on our system we have to write dot ( . ) behind of the path like :
+
+
+adb exec-out screencap -p >  ./the_path_need_save/picname.png
+
+
+----------
+
+to get screen recording
+
+adb shell screenrecord "/thePath_will_save_on_phone/video.mp4"
+
+important note : when you run this commadn out of shell , 
+nothing happend and its show nothing to you . because its started recording the screen of your phone
+
+
+important note : its will recording untile you use ctrl+c on you terminal(CMD). 
+after using ctrl+c recording stop and save that video to that path you set.
+
+
+---------
+
+to work with screen with command
+
+adb shell input <acttion>
+
+---
+to tap on screen with commad
+
+adb shell input tap x y 
+
+we have to pass mesure of x and y on screen like :
+
+adb shell input tap 85 78
+
+---
+
+to input a Text 
+
+adb shell input text "this is test"
+
+
+---
+
+to swipe/ scroll the screen 
+
+adb shell input swipe x y x y Duration(mili second)
+
+
+------------
+
+to use main bottons like Home \ back bottons \ list ...
+
+adb shell input keyevent NUmber_of_event
+
+3 : Home
+4 : Back
+26: Power (screen on \ screen off)
+66: Enter
+61: Tab
+
+like :
+
+adb shell input keyevent 4
+
+------------
+
+to install an App from your PC on Emulator
+
+
+
+
+adb -s emulator-ID install app.apk
+
+
+if you install an Update of exist app you have to use -r . like :
+
+
+adb -s emulator-5554 install -r app.apk
+
+
+
+
+------------
+
+to run an app 
+
+if you wanna run app with command line , you have to got name of package and the name of that activicy.
+so how we can catch these argumans ?
+
+
+- easy way :
+
+run that app in you emulator and run this command on your terminal :
+
+1- adb shell dumpsys window | findstr "mCurrentFocus"
+
+its will show to you a result that has to part . package_Name/Activity_Name . like :
+
+mCurrentFocus=Window{4c3fa1f u0 com.instagram.android/com.instagram.mainactivity.InstagramMainActivity}
+
+after the catching the data run this command to run the app :
+
+2- adb -s emulator-5556 shell start am start -n com.instagram.android/com.instagram.mainactivity.InstagramMainActivity
+
+
+
+- better way :
+
+if you just have the package name you can use this command :
+
+adb shell monkey -p The_Package_Name -c android.intent.category.LAUNCHER 1
+
+some thing like :
+
+adb shell monkey -p com.instagram.android -c android.intent.category.LAUNCHER 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
