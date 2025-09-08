@@ -7,6 +7,20 @@ to initioalise and show the files to git we have use this command :
 
 git init
 
+
+--------
+
+to see status of git and changes on git we have use this command :
+
+git status
+
+its help to us to know how many fild modefide , deleted , added , tracked and untrackted .
+
+
+its help us to know how to mannage file and whitch files need to add in git-box
+
+
+
 --------
 
 after that command git will see the files and folders . if we wanna git tracks them we have add files to gits box 
@@ -25,3 +39,25 @@ also we can add specific #filess . for example we can add all files those are *.
 git add '*.html' ==> every file that is html-format
 
 git add 'index.* ==> every file that name is index
+
+
+
+--------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
