@@ -70,7 +70,26 @@ even if we modified a file and send those on stage mode , we can rest that and b
 -------
 
 
+6 - if we wanna see exact changes between after & before of files those are on stage mode, we can use this tool :
 
+git diff --staged
+
+
+note : compare just the changed files on stage-mode with last commit
+
+
+this command show all changes files those are on stage mode , its shows changes line by line .
+
+
+also we can use this tool compare the all first files(last commit) with changes files, like :
+
+git diff HEAD
+
+
+note : HEAD means last commit
+
+
+-------
 
 
 
