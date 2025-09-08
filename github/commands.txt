@@ -91,6 +91,28 @@ note : HEAD means last commit
 
 -------
 
+7 - if you wanna develop a part of a project , and also you wanna make a copy from main files and , change some thing in those 
+you have to make a branch from main branch . its help you to make a copy from main files and after all chenges , merg those
+with main project .
+
+
+we can make a branch with this command :
+
+git branch branch-name
+
+
+if you wanna see the all branch you have run this command :
+
+git branch
+
+
+if you wanna switch between branches you have to use this command :
+
+git branch checkout branch-name
+
+
+---------
+
 
 
 
