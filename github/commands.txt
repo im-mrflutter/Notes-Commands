@@ -17,13 +17,13 @@ git status
 its help to us to know how many fild modefide , deleted , added , tracked and untrackted .
 
 
-its help us to know how to mannage file and whitch files need to add in git-box
+its help us to know how to mannage file and whitch files need to add in git-box (stage)
 
 
 
 --------
 
-3 - after that command git will see the files and folders . if we wanna git tracks them we have add files to gits box 
+3 - after that command git will see the files and folders . if we wanna git tracks them we have add files to gits box(stage)
 its means , we have give access to git . we can use it with this command :
 
 git add -A
@@ -44,9 +44,18 @@ git add 'index.* ==> every file that name is index
 
 --------
 
-4 - 
+4 - if we wanna take out an specific file from git-box(stage) , and when i commit changes to my branch , that file will not commit.
+we can use this command :
+
+git reset file-name
+
+also we can take out all files from git-box(stage) with this command :
+
+git reset
 
 
+
+--------
 
 
 
