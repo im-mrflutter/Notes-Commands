@@ -111,7 +111,30 @@ if you wanna switch between branches you have to use this command :
 git branch checkout branch-name
 
 
+if you wanna delete a branch you have to run this command :
+
+git branch -d branch-name
+
+
+important note : if you make a branch and change some thing or delete or add file , you have to commit that , 
+if you dont you can also see the changes on another branchs .
+
 ---------
+8 - so you made a new branch and add you changes in files . its time to merg changes with main files .
+
+we can use this command :
+
+note : we have to checkout to master and merging
+
+git merg branch-name
+
+
+git will automaticlly add changes , to files 
+
+
+important note : if you make a branch and change some thing or delete or add file , you have to commit that , 
+if you dont you can also see the changes on another branchs .
+
 
 
 
