@@ -54,13 +54,20 @@ also we can take out all files from git-box(stage) with this command :
 git reset
 
 
-
 --------
 
+5 - if we wanna back to last commit and forget the any changes we done on file , we can use this command :
+
+git checkout -- file_name
+
+example :
+
+git checkout -- commands.txt
+
+even if we modified a file and send those on stage mode , we can rest that and back to that version of before changes (last commit)
 
 
-
-
+-------
 
 
 
