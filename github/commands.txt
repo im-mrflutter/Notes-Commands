@@ -1,4 +1,4 @@
-first of all we have to show fils to git , its means we have say to git "lets know these/this file" .
+1 - first of all we have to show fils to git , its means we have say to git "lets know these/this file" .
 
 to initioalise and show the files to git we have use this command :
 
@@ -10,7 +10,7 @@ git init
 
 --------
 
-to see status of git and changes on git we have use this command :
+2 - to see status of git and changes on git we have use this command :
 
 git status
 
@@ -23,7 +23,7 @@ its help us to know how to mannage file and whitch files need to add in git-box
 
 --------
 
-after that command git will see the files and folders . if we wanna git tracks them we have add files to gits box 
+3 - after that command git will see the files and folders . if we wanna git tracks them we have add files to gits box 
 its means , we have give access to git . we can use it with this command :
 
 git add -A
@@ -44,7 +44,7 @@ git add 'index.* ==> every file that name is index
 
 --------
 
-
+4 - 
 
 
 
