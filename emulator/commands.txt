@@ -1,0 +1,63 @@
+you can use this tool to run an emulator with command prompt . 
+this tool not avelable as defualt on cmd or power shell . you have to add the path on .exe file
+
+so you have to find this tool from this path :
+
+C:\Users\[YourUser]\AppData\Local\Android\Sdk\emulator
+
+(or any path you installed your Android's SDKs)
+
+
+and you have add this path to "edit the system Evnvierments" . on system variables , Path-part .
+
+
+affter add the path you can use this tool from CMD easily .
+
+------------------------------------
+
+
+before running the command you have to know AVD IDs . you can see all exist ID with this command :
+
+
+emulator -list-avds
+
+
+
+also you can change the AVDs ID . you have to go to this path (as default) :
+
+C:\Users\[YourUser]\.android\avd
+
+and you can see the files those end with ".ini" . thats exactlly the AVDs ID .
+
+-------------------------------------
+
+
+if you wanna run an emulator with command you have run this :
+
+
+emulator -avd AVD_ID
+
+like :
+
+emulator -avd tst1
+
+
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
